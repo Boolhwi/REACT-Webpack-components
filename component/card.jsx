@@ -1,9 +1,9 @@
 import React from 'react';
 const { Component} = React;
 
-import Title from './title';
-import Content from './content';
-import Image from './image';
+import Title from './card/title';
+import Content from './card/content';
+import Image from './card/image';
 
 
 class Card extends Component {
