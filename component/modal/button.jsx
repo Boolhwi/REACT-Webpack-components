@@ -5,7 +5,7 @@ class Button extends Component {
 
     render() {
         return (
-            <button onClick={this.props.handler}>
+            <button className="modal_btn" onClick={this.props.handler}>
                 {this.props.button}
             </button>
         )

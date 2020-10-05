@@ -1,0 +1,67 @@
+
+
+.window_background {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    left:0;
+    top:0;
+
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.window_content {
+    width: 60%;
+    height: 400px;
+    margin: auto;
+    margin-top: 200px;
+
+    display: flex;
+
+    background-color: black;
+    border: black 1px solid;
+    padding: 2%;
+
+}
+
+.column1 {
+    flex-basis: 48%;
+    margin: auto;
+}
+
+.column2 {
+    flex-basis: 48%;
+    margin: auto;
+}
+
+.window_big_image {
+    width: 100%;
+    height: auto;
+}
+
+.window_small_images {
+    width: 50%;
+}
+
+.modal_btn {
+    font-size: 40px;
+    font-weight: bold;
+
+    background-color: gray;
+    border: none;
+
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    font-size: 40px;
+
+    background-color: gray;
+    border: none;
+    right: 20%;
+
+    cursor: pointer;
+}

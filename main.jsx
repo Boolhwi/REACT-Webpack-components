@@ -87,7 +87,7 @@ class Main extends Component {
                     <Card card={this.state.card[2]}/>
                     <Card card={this.state.card[3]}/>
                 </div>
-                <div>
+                <div className="modal_collection">
                     <Modal modal={this.state.modal[0]}/>
                     <Modal modal={this.state.modal[1]}/>
                     <Modal modal={this.state.modal[2]}/>

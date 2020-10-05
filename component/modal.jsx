@@ -12,7 +12,13 @@ class Modal extends Component {
     }
 
     modal_handler = e => {
-        this.setState({
+
+        if (this.state.show) {
+            this.setState({
+                show: false
+            })
+        }
+        else this.setState({
             show: true
         })
     }
@@ -25,7 +31,7 @@ class Modal extends Component {
                         <Button button={this.props.modal.button} handler={this.modal_handler} />
                     </div>
                     <div className="window">
-                        <Window window={this.props.modal.window} />
+                        <Window window={this.props.modal.window} handler={this.modal_handler}/>
                     </div>
                 </div>
             )

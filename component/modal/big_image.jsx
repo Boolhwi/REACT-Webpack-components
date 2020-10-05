@@ -4,8 +4,8 @@ const { Component} = React;
 class Big_image extends Component {
     render() {
         return (
-            <div>
-                <img src={this.props.big_image}></img>
+            <div >
+                <img className="window_big_image" src={this.props.big_image}></img>
             </div>
         )
     }

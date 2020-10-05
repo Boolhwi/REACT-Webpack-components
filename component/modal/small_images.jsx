@@ -5,8 +5,8 @@ class Small_images extends Component {
     render() {
         return (
             <div>
-                <img src={this.props.small_images[0]}></img>
-                <img src={this.props.small_images[1]}></img>
+                <img className="window_small_images" src={this.props.small_images[0]}></img>
+                <img className="window_small_images" src={this.props.small_images[1]}></img>
             </div>
         )
     }

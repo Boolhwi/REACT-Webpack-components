@@ -10,3 +10,11 @@ body {
     justify-content: space-between;
     margin-top: 200px;
 }
+
+.modal_collection {
+  width: 80%;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 50px;
+}
