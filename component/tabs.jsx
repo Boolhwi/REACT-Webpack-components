@@ -4,6 +4,8 @@ const { Component } = React;
 import Button from './tabs/button';
 import Contents from './tabs/contents';
 
+import './tabs.css';
+
 
 
 class Tabs extends Component {
@@ -20,12 +22,20 @@ class Tabs extends Component {
 
     render() {
         return (
-            <div>
+            <div className="tab_container">
                 <div className="tab_btn_container">
                     {this.props.tabs.map((tab, idx) => {
-                        return <Button key={tab.title}
-                            title={tab.title} tab_handler={this.tab_handler} idx={idx}
-                        />
+
+                        if (this.state.index === idx) {
+                            return <Button key={tab.title}
+                                title={tab.title} tab_handler={this.tab_handler} idx={idx} active='highlight_tab'
+                            />
+                        }
+                        else {
+                            return <Button key={tab.title}
+                                title={tab.title} tab_handler={this.tab_handler} idx={idx} active='unhighlight_tab'
+                            />
+                        }
                     })}
                 </div>
                 <Contents contents={this.props.tabs[this.state.index].contents} />

@@ -1,6 +1,8 @@
 body {
     color: white;
     background-color: black;
+
+    margin: 0;
   }
 
 .card_collection {
