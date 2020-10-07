@@ -1,0 +1,18 @@
+
+
+.bag_container {
+    flex-basis: 40%;
+    margin: auto;
+}
+
+.bag_name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.bags {
+    width: 600px;
+    height: 150px;
+
+    background-color: white;
+}

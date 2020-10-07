@@ -4,6 +4,7 @@ const { Component} = React;
 import Card from './component/card';
 import Modal from './component/modal';
 import Tabs from './component/tabs';
+import DragDrop from './component/dragdrop';
 
 import './main.css';
 
@@ -97,7 +98,26 @@ class Main extends Component {
                 contents:'병원장인 아버지와 대학교수 어머니를 둔 흔히 말하는 금수저 출신이다. 정국표 정권이 들어서고 나서부터 조직의 색깔도 바뀌었다. 파벌싸움과 알력다툼이 국정원을 갈라놓고 있었다. 진짜 요원들은 한직으로 밀려났고 정치꾼과 모사꾼들이 조직을 장악했다. 그의 포지션도 위태로웠다. 비행기 테러의 공범, 잡기 위해 모로코에 급파됐다. 거기서 그는 차달건을 처음 만났다.'
             },
 
-        ]
+        ],
+
+        dragdrop: {
+            item:
+            [
+                './component/dragdrop/image/권총.png',
+                './component/dragdrop/image/노트북.png',
+                './component/dragdrop/image/휴대폰.png',
+                './component/dragdrop/image/신발.png',
+                './component/dragdrop/image/저격총.png',
+                './component/dragdrop/image/책.png',
+                './component/dragdrop/image/선글라스.png'
+            ],
+
+            bag:
+            [
+                '박아인 가방', '배수지 가방', '이승기 가방', '신성록 가방'
+            ]
+        }
+
     }
 
     render() {
@@ -117,6 +137,9 @@ class Main extends Component {
                 </div>
                 <div>
                     <Tabs tabs={this.state.tabs}/>
+                </div>
+                <div className="dragdrop_collection">
+                    <DragDrop dragdrop={this.state.dragdrop}/>
                 </div>
             </div>
         )
