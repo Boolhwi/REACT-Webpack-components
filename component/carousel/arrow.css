@@ -1,0 +1,21 @@
+
+.left_arrow {
+    position: absolute;
+
+    cursor: pointer;
+    top: 40%;
+
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.right_arrow {
+    position: absolute;
+
+    cursor: pointer;
+    top: 40%;
+
+    font-weight: bold;
+    font-size: 30px;
+    right: 0px;
+}

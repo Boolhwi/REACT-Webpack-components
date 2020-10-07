@@ -1,0 +1,26 @@
+
+.dot_container {
+    margin-top: 20px;
+}
+
+.selected_dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 0px 5px;
+    background-color: rgb(113, 113, 113);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease 0s;
+}
+
+.unselected_dot {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    margin: 0px 5px;
+    background-color: rgb(187, 187, 187);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease 0s;
+}

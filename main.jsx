@@ -5,6 +5,7 @@ import Card from './component/card';
 import Modal from './component/modal';
 import Tabs from './component/tabs';
 import DragDrop from './component/dragdrop';
+import Carousel from './component/carousel';
 
 import './main.css';
 
@@ -116,7 +117,15 @@ class Main extends Component {
             [
                 '박아인 가방', '배수지 가방', '이승기 가방', '신성록 가방'
             ]
-        }
+        },
+
+        carousel:
+        [
+            'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDRfMTE1%2FMDAxNTcyODYxNjMyMjIx.BBqQg563Nqc54BNyfqLRFDLzOboQCcmuTdy1KqoGF0Ug.KAmOupkow5mUIQjinOeragtDb7ceYxKsqDElLKw9OUQg.PNG.wonhayun5%2F1._%25B9%25E8%25B0%25A1%25BA%25BB%25B5%25E5_13%25BA%25CE_%25C6%25AE%25C0%25A9%25B8%25F0%25BE%25EE_C2_%25285%2529.png&type=sc960_832',
+            'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDNfMjMg%2FMDAxNTcyNzg4NjM5NzEz.EACgnVCT8FhI-x06ai-iZ9khNuG0F3NLqfJhjbTGiG4g.yUlW3yWPAuFkHaVQcbSbEskG10XG9WURspzbM6vDns0g.PNG.rosebero%2F13%25C8%25B8_%25C6%25AE%25C0%25A9%25B8%25F0%25BE%25EE_C2_%25284%2529.png&type=sc960_832',
+            'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA5MjFfNDEg%2FMDAxNTY5MDYzMzg5NTU0.m7m-KYqAwLWk_6BIZSzpHuTZ1fbygztDT_n09SfD6GYg.q3zqQH6LhYqT_lfAMUWWRMCgbB75o8YQP-8HIjskT1wg.PNG.eyeslovehead%2F1%25BA%25CE_%25C2%25F8%25BF%25EB%25C4%25C6_%25C4%25B3%25B8%25AEC2_%25BC%25B1%25B1%25DB%25B6%25F3%25BD%25BA_%25282%2529.png&type=sc960_832',
+            'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDRfMTY3%2FMDAxNTcyODM0NDcxMzIx.SuPod8_512zir0Ypc1B90MET19quzYgHrYwl5ayapIYg.5-LOsQG9oMOyXGDBCq_5nUErmR-71-5OToQ_fyVkEHAg.JPEG.luvsuy76%2F%25B9%25E8%25B0%25A1%25BA%25BB%25B5%25E5.E13.191102.HDTV.H264.720p.mp4_003109379.jpg&type=sc960_832',
+        ]
 
     }
 
@@ -140,6 +149,9 @@ class Main extends Component {
                 </div>
                 <div className="dragdrop_collection">
                     <DragDrop dragdrop={this.state.dragdrop}/>
+                </div>
+                <div className="carousel_collection">
+                    <Carousel carousel={this.state.carousel}/>
                 </div>
             </div>
         )
