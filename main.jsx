@@ -6,6 +6,7 @@ import Modal from './component/modal';
 import Tabs from './component/tabs';
 import DragDrop from './component/dragdrop';
 import Carousel from './component/carousel';
+import Tooltip from './component/tooltip';
 
 import './main.css';
 
@@ -125,6 +126,26 @@ class Main extends Component {
             'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDNfMjMg%2FMDAxNTcyNzg4NjM5NzEz.EACgnVCT8FhI-x06ai-iZ9khNuG0F3NLqfJhjbTGiG4g.yUlW3yWPAuFkHaVQcbSbEskG10XG9WURspzbM6vDns0g.PNG.rosebero%2F13%25C8%25B8_%25C6%25AE%25C0%25A9%25B8%25F0%25BE%25EE_C2_%25284%2529.png&type=sc960_832',
             'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTA5MjFfNDEg%2FMDAxNTY5MDYzMzg5NTU0.m7m-KYqAwLWk_6BIZSzpHuTZ1fbygztDT_n09SfD6GYg.q3zqQH6LhYqT_lfAMUWWRMCgbB75o8YQP-8HIjskT1wg.PNG.eyeslovehead%2F1%25BA%25CE_%25C2%25F8%25BF%25EB%25C4%25C6_%25C4%25B3%25B8%25AEC2_%25BC%25B1%25B1%25DB%25B6%25F3%25BD%25BA_%25282%2529.png&type=sc960_832',
             'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAxOTExMDRfMTY3%2FMDAxNTcyODM0NDcxMzIx.SuPod8_512zir0Ypc1B90MET19quzYgHrYwl5ayapIYg.5-LOsQG9oMOyXGDBCq_5nUErmR-71-5OToQ_fyVkEHAg.JPEG.luvsuy76%2F%25B9%25E8%25B0%25A1%25BA%25BB%25B5%25E5.E13.191102.HDTV.H264.720p.mp4_003109379.jpg&type=sc960_832',
+        ],
+
+        tooltip:
+        [
+            {
+                title: '박아인 조력자',
+                contents: '북한갱단 김도수'
+            },
+            {
+                title: '배수지 조력자',
+                contents: '국정원 공화숙'
+            },
+            {
+                title: '이승기 조력자',
+                contents: '유가족 박광덕'
+            },
+            {
+                title: '신성록 조력자',
+                contents: '국정원 강주철'
+            }
         ]
 
     }
@@ -133,16 +154,14 @@ class Main extends Component {
         return (
             <div>
                 <div className="card_collection">
-                    <Card card={this.state.card[0]}/>
-                    <Card card={this.state.card[1]}/>
-                    <Card card={this.state.card[2]}/>
-                    <Card card={this.state.card[3]}/>
+                    {this.state.card.map((card, idx) => {
+                        return <Card key={idx} card={card}/>
+                    })}
                 </div>
                 <div className="modal_collection">
-                    <Modal modal={this.state.modal[0]}/>
-                    <Modal modal={this.state.modal[1]}/>
-                    <Modal modal={this.state.modal[2]}/>
-                    <Modal modal={this.state.modal[3]}/>
+                    {this.state.modal.map((modal, idx) => {
+                        return <Modal key={idx} modal={modal}/>
+                    })}
                 </div>
                 <div>
                     <Tabs tabs={this.state.tabs}/>
@@ -152,6 +171,11 @@ class Main extends Component {
                 </div>
                 <div className="carousel_collection">
                     <Carousel carousel={this.state.carousel}/>
+                </div>
+                <div className="tooltip_collection">
+                    {this.state.tooltip.map((tooltip, idx) => {
+                        return <Tooltip key={idx} tooltip={tooltip}/>
+                    })}
                 </div>
             </div>
         )

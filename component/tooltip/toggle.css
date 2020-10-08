@@ -1,0 +1,23 @@
+
+
+.tooltip_toggle {
+    width: 200px;
+    height: 35px;
+
+    font-size: 25px;
+    font-weight: bold;
+    padding: 12px;
+
+    text-align: center;
+
+    background-color: #777777;
+    border-radius: 9px;
+
+    position: absolute;
+    z-index: 1;
+
+    margin-top: 10px;
+
+    cursor: pointer;
+    user-select: none;
+}

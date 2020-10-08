@@ -1,0 +1,19 @@
+
+
+.tooltip_btn {
+    width: 200px;
+    height: 35px;
+
+    font-size: 25px;
+    font-weight: bold;
+    padding: 12px;
+
+    text-align: center;
+
+    background-color: #555555;
+    border-radius: 9px;
+
+    cursor: pointer;
+    user-select: none;
+
+}
