@@ -1,0 +1,20 @@
+
+.dropdown_container {
+    display: inline-block;
+}
+
+.dropdown_menu {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 20px 30px;
+    border: none;
+    background-color: rgb(51, 51, 51);
+
+    outline: none;
+    cursor: pointer;
+}
+
+.dropdown_menu:hover {
+    background-color: red;
+}

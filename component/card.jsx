@@ -5,6 +5,8 @@ import Title from './card/title';
 import Content from './card/content';
 import Image from './card/image';
 
+import './card.css';
+
 
 class Card extends Component {
 

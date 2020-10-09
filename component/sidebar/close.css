@@ -1,0 +1,21 @@
+
+.sidebar_close_btn {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    margin-top: 20px;
+    margin-right: 20px;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    text-align: center;
+    border: none;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.sidebar_close_btn:hover {
+    color: black;
+}

@@ -5,6 +5,10 @@ body {
     margin: 0;
   }
 
+.collection_container {
+  margin-bottom: 300px;
+}
+
 .card_collection {
     width: 80%;
     display: flex;
@@ -38,4 +42,14 @@ body {
 
   display: flex;
   justify-content: space-between;
+}
+
+.navbar_collection {
+  margin-bottom: 300px;
+
+  position: absolute;
+  z-index: 1;
+
+  top: 0;
+  left: 0;
 }

@@ -1,0 +1,17 @@
+
+.sidebar_menu {
+    padding: 15px 8px 15px 32px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: block;
+
+    transition: all 0.3s ease 0s;
+
+    cursor: pointer;
+}
+
+.sidebar_menu:hover {
+    color: black;
+}
