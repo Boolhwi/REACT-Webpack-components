@@ -1,8 +1,9 @@
 const path = require('path')
+process.env.NODE_ENV == "production"
 
 module.exports = {
     name: 'card',
-    mode: 'development',
+    mode: 'production',
     devtool: 'eval',
     resolve: {
         extensions: ['.js', '.jsx']
