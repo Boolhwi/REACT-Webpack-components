@@ -12,6 +12,8 @@ body {
 .card_collection {
     width: 80%;
     display: flex;
+    flex-wrap: wrap;
+
     margin: auto;
     justify-content: space-between;
     margin-top: 200px;

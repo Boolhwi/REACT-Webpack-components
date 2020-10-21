@@ -6,3 +6,7 @@
     margin: auto;
     text-align: center;
 }
+
+.carousel_container > img {
+    width: 80%;
+}
